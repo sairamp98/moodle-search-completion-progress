@@ -554,7 +554,7 @@ foreach ($progress as $user) {
         print PHP_EOL . '<tr id="user-' . $user->id . '">';
 
         if (completion_can_view_data($user->id, $course)) {
-            $userurl = new moodle_url('/blocks/completionstatus/details.php', array('course' => $course->id, 'user' => $user->id));
+            $userurl = new moodle_url('/blocks/cpm_completionstatus/details.php', array('course' => $course->id, 'user' => $user->id));
         } else {
             $userurl = new moodle_url('/user/view.php', array('id' => $user->id, 'course' => $course->id));
         }
